@@ -1,24 +1,21 @@
 import { useState } from "react";
 import "./App.css";
-// import { Button } from "flowbite-react";
 import RowInvoice from "./components/RowInvoice";
 import HeaderInvoiceTable from "./HeaderInvoiceTable";
-import TotalInvoice from "./components/TotalInvoice";
+import RowsWrapper from "./components/RowsWrapper";
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [RowInvoiceObjArray, setRowInvoiceObjArray] = useState([]);
+  // const [total, setTotal] = useState(0);
 
   return (
     <>
       <HeaderInvoiceTable />
-      <RowInvoice
-        item={1}
-        description="photoshoot"
-        quantity={2}
-        unitCost={120}
-      />
-      <RowInvoice item={2} description="carrots" quantity={5} unitCost={5} />
-      <TotalInvoice />
+      <RowsWrapper>
+        <RowInvoice item={1} description="ananas" quantity={2} unitCost={12} />
+        <RowInvoice item={2} description="apple" quantity={3} unitCost={10} />
+        <RowInvoice item={3} description="carrots" quantity={5} unitCost={3} />
+      </RowsWrapper>
     </>
   );
 }
