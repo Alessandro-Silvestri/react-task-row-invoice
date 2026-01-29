@@ -17,6 +17,7 @@ function App() {
         <RowInvoice item={3} description="carrots" quantity={5} unitCost={3} />
         <RowInvoice item={4} description="vegetable" quantity={3} unitCost={4} />
         <RowInvoice item={5} description="pears" quantity={7} unitCost={2} />
+        <RowInvoice item={6} description="bananas" quantity={3} unitCost={3} />
       </RowsWrapper>
     </>
   );
